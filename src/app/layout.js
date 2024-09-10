@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -15,8 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <main className="max-w-6xl  mx-auto p-4">{children}
-
+        <main className="max-w-6xl  mx-auto p-4">
+          
+      <Header />
+          {children}
+          <section className="text-center mt-10 py-4 bg-gray-100">
+  <p className="text-gray-500">&copy; {new Date().getFullYear()} Pizza ST. All rights reserved.</p>
+</section>
         </main>
       </body>
     </html>

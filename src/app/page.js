@@ -6,7 +6,7 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 export default function Home() {
   return (
     <>
-      <Header />
+      
       <Hero />
       <HomeMenu />
       <section className="text-center my-10">
@@ -27,9 +27,7 @@ export default function Home() {
     </div>
   </div>
 </section>
-<section className="text-center mt-10 py-4 bg-gray-100">
-  <p className="text-gray-500">&copy; {new Date().getFullYear()} Pizza ST. All rights reserved.</p>
-</section>
+
     </>
   );
 }
